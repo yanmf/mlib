@@ -1,4 +1,4 @@
-module gitee.com/yanmf/mlib
+module github.com/yanmf/mlib
 
 go 1.21.5
 
