@@ -2,7 +2,10 @@ module gitee.com/yanmf/mlib
 
 go 1.21.5
 
-require github.com/rs/zerolog v1.34.0
+require (
+	github.com/pelletier/go-toml/v2 v2.2.4
+	github.com/rs/zerolog v1.34.0
+)
 
 require (
 	github.com/mattn/go-colorable v0.1.13 // indirect
