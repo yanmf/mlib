@@ -25,3 +25,7 @@ func TimeMilliLayoutFormat(t int64, layout string) string {
 func TimeSecondLayoutFormat(t int64, layout string) string {
 	return time.Unix(t, 0).Format(layout)
 }
+
+func NowTimeFormat() string {
+	return time.Now().Format(TimeLayout)
+}
