@@ -60,6 +60,15 @@ func InitLog(root, logLevel string) {
 	startFlusher()
 }
 
+func SetLevel(logLevel string) error {
+	l, err := zerolog.ParseLevel(strings.ToLower(logLevel))
+	if err != nil {
+		return err
+	}
+	zerolog.SetGlobalLevel(l)
+	return nil
+}
+
 func Trace() *LogEvent {
 	return Logger.Trace()
 }
